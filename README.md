@@ -10,7 +10,7 @@ The slides were primarily build using the [deck.js framework](http://imakewebthi
 |-- assets/     # Directory for images, extra CSS, etc.
 |-- core/       # Directory for Deck.js core code 
 |-- extensions/ # Deck.js extensions
-|-- papers/     # Directory of papers used and cited in the research
+|-- papers/     # Directory of papers used and cited
 |-- themes/     # Deck.js themes
 |-- index.html  # Slides
 |-- LICENSE 
