@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>Data Safety and Security</title>
+  <title>Social Disorganization Theory</title>
   <meta name="description" content="Slides introducing Social Disorganization Theory.">
   <meta name="author" content="Chris Callaghan, cjcallaghan88@gmail.com">
   <link rel="icon" href="assets/logo.png">
@@ -48,6 +48,17 @@
 
   <!-- Link fontawesome -->
   <script src="https://kit.fontawesome.com/2cda5382d8.js" crossorigin="anonymous"></script>
+  <style>
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+      background-color: #004270;
+    }
+
+    .apa-reference {
+      padding-left: 36px;
+      text-indent: -36px
+    }
+  </style>
 </head>
 
 <body>
@@ -132,42 +143,128 @@
 
     <section class="slide">
       <h2>Shaw and McKay's Research (1942)</h2>
-      <div class="container" style="margin-left:0; margin-right: 0;">
-        <div class="row" style="margin-left:0; margin-right: 0;">
-          <div class="col-8">
-            <br />
-            <p>By hand, Shaw and Mckay mapped residencies of official delinquents on maps of Chicago for different
-              periods of time 1900-1906, 1917-1923, and 1927-1933. Cullen et al. (2022) provide a description of
-              findings:
+
+      <ul class="nav nav-pills nav-fill" id="myTab">
+        <li class="nav-item">
+          <a href="#background" class="nav-link active" data-bs-toggle="tab">Background</a>
+        </li>
+        <li class="nav-item">
+          <a href="#maps" class="nav-link" data-bs-toggle="tab">Maps</a>
+        </li>
+        <li class="nav-item">
+          <a href="#data" class="nav-link" data-bs-toggle="tab">Data</a>
+        </li>
+        <li class="nav-item">
+          <a href="#findings" class="nav-link" data-bs-toggle="tab">Findings</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="background">
+          <br />
+          <ul>
+            <li>
+              Shaw and McKay applied the ideas of human ecology and the concentric zone model to study the association
+              between urban characteristics and juvenile delinquency.
+            </li>
+            <li>
+              Their study of social disorganization centered around three sets of variables:
+              <ul>
+                <li>
+
+                  <p><span style="color: #1b9e77;">Physical status:</span> They proposed that areas with high
+                    delinquency rates
+                    tended to be physically deteriorated, close to heavy industry, and populated with highly transient
+                    residents.</p>
+                </li>
+                <li>
+                  <p><span style="color: #d95f02;">Economic status:</span> The association
+                    between economic status and
+                    delinquency.</p>
+                </li>
+                <li>
+                  <p><span style="color: #7570b3;">Population status:</span> They relationship between
+                    demographics
+                    and the rate of delinquency in an area.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              By hand, they mapped the addresses of juvenile delinquents - those referred to juvenile court, truancy,
+              and
+              recidivism - and compiled them into small census areas and they city zones. Then they examined delinquency
+              in Chicago communities for three periods of time: 1900-1906, 1917-1923, and 1927-1933.
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="data">
+          <br />
+          <div class="card" style="border: solid #1b9e77">
+            <div class="card-body">
+              <h5 class="card-title">Physical status</h5>
+              <p class="card-text">They measures the physical status of an area through: (1) population change, (2)
+                vacant and condemned housing, and (3) proximity to industry.</p>
+            </div>
+          </div>
+          <br />
+          <div class="card" style="border: solid #d95f02">
+            <div class="card-body">
+              <h5 class="card-title">Economic status</h5>
+              <p class="card-text">They used three variables in their analysis: (1) the number of families receiving
+                social assistance, (2) the median rental price of the area, and (3) the number of homes ownen rather
+                than rented.</p>
+            </div>
+          </div>
+          <br />
+          <div class="card" style="border: solid #7570b3">
+            <div class="card-body">
+              <h5 class="card-title">Population status</h5>
+              <p class="card-text">They looked at the demographic variables such as ethnicity, number of foreign-born
+                heads of household, etc.</p>
+            </div>
+          </div>
+          <p style="text-align:right;">
+            Adapted from Walker (2009)
+          </p>
+        </div>
+        <div class="tab-pane fade" id="maps">
+          <br />
+          <div class="row">
+            <div class="col-6">
+              <img src="assests/rates_of_delinquents.png" height="500" />
+            </div>
+            <div class="col-6">
+              <img src="assests/sm_concentric_zones.png" height="500" />
+            </div>
+          </div>
+          <p style="text-align:right;">
+            Borrowed from
+            <a href="" https://clanfear.github.io />Charles C. Lanfear</a>
+          </p>
+        </div>
+        <div class="tab-pane fade" id="findings">
+          <br />
+          <p>Cullen et al. (2022) provide a description of the findings of the work:</p>
+          <ul>
+            <li>
+              Crime rates were pronounced in the zone of transition and became progressively lower as one moves to the
+              outer zones.
+              <!-- stable more homogenous population, middle and upper class, and an absence in delinquent tradition. -->
+            </li>
+            <li>
+              Zone in transition was characterized by low socioeconomic status, ethnic
+              heterogeneity, and
+              residential instability.
               <!-- 
-                Their data consisted of juvenile court, truancy, and crime records. Also, life histories of delinquents.
+                LOW SOCIOECONOMIC STATUS: There are inadequate resources in these areas and the residents live in poverty.
+                ETHNIC HETEROGENEITY: Different racial and ethnic groups live together in these areas, and differences in culture and language create barriers. People isolate themselves, avoid meaningful interaction, and don't have much in common.
+                RESIDENTIAL INSTABILITY: There is constant population turnover. Residents move frequently or are looking to move out of these areas.
                -->
-            <ul>
-              <li>
-                Crime rates were pronounced in the zone of transition and became progressively lower as one moves to the
-                outer zones.
-                <!-- stable more homogenous population, middle and upper class, and an absence in delinquent tradition. -->
-              </li>
-              <li>
-                Zone in transition was characterized by low socioeconomic status, ethnic
-                heterogeneity, and
-                residential instability.
-                <!-- 
-                  LOW SOCIOECONOMIC STATUS: There are inadequate resources in these areas and the residents live in poverty.
-                  ETHNIC HETEROGENEITY: Different racial and ethnic groups live together in these areas, and differences in culture and language create barriers. People isolate themselves, avoid meaningful interaction, and don't have much in common.
-                  RESIDENTIAL INSTABILITY: There is constant population turnover. Residents move frequently or are looking to move out of these areas.
-                 -->
-              </li>
-              <li>
-                Rates of crime by area remained relatively the same regarless of ethnic turnover. This
-                suggests that characteristics of the area, not the people in them, regulated levels of delinquency.
-              </li>
-            </ul>
-            </p>
-          </div>
-          <div class="col-4">
-            <img src="assests/rates_of_delinquents.png" height="700" />
-          </div>
+            </li>
+            <li>
+              Rates of crime by area remained relatively the same regarless of ethnic turnover. This
+              suggests that characteristics of the area, not the people in them, regulated levels of delinquency.
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -197,6 +294,9 @@
       <h2>
         Extending Social Disorgation Theory
       </h2>
+      <!-- 
+        Beginning in the 1980s...
+       -->
     </section>
 
     <section class="slide">
@@ -227,23 +327,23 @@
     <section class="slide">
       <h2>Works cited</h2>
       <br />
-      <p>
+      <p class="apa-reference">
         Bursik, Robert. "Social Disorganization and Theories of Crime and Delinquency: Problems and Prospects."
         <i>Criminology</i> vol. 26, 1988, pp. 519-551.
       </p>
-      <p>
+      <p class="apa-reference">
         Cullen, Francis, et al. <i>Criminological Theory: Past to Present. </i> Oxford University Press, 2022.
       </p>
-      <p>
+      <p class="apa-reference">
         Gehring, Krista, writer. <i>Crimcomics: Social Disorganization Theory.</i> Art by Michael Batista. Oxford:
         Oxford University Press, 2018, Print.
       </p>
-      <p>
+      <p class="apa-reference">
         Kubrin, Charis. "Shaw, Clifford R., and Henry D. McKay: Social Disorganization Theory." <i>Encyclopedia of
           Criminological Theory</i>, edited by Francis T. Cullen and Pamela Wilcox, SAGE Publications, 2010, pp.
         828-835.
       </p>
-      <p>
+      <p class="apa-reference">
         Walker, Jeffery. "Social Disorganization Theory." <i></i>, edited by J. Mitchell Miller. Sage Publications,
         2009, pp. 312-322.
       </p>
@@ -252,7 +352,8 @@
     </section>
 
     <!-- Insert footer -->
-    <footer style="position: absolute; bottom: 0; width: 100%;height: 2.5rem; background-color: #004270;">
+    <footer
+      style="position: absolute; bottom: 0; width: 100%;height: 2.5rem; background-color: #004270; z-index: 10000;">
       <span><img src="assests/JC+CSG_Logo_white_nobackground.png" , width="150" , style="float: right;"></span>
     </footer>
 
@@ -294,6 +395,20 @@
   <script>
     $(function () {
       $.deck('.slide');
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var tabList = [].slice.call(document.querySelectorAll("#myTab a"));
+      tabList.forEach(function (tab) {
+        var tabTrigger = new bootstrap.Tab(tab);
+
+        tab.addEventListener("click", function (event) {
+          event.preventDefault();
+          tabTrigger.show();
+        });
+      });
     });
   </script>
 </body>
