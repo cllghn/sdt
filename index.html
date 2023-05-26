@@ -82,6 +82,35 @@
       z-index: 1000;
       user-select: none;
     }
+
+    .callout {
+      padding: 20px;
+      margin: 20px 0;
+      border: 1px solid #eee;
+      border-left-width: 5px;
+      border-radius: 3px;
+      h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+      code {
+        border-radius: 3px;
+      }
+      & + .bs-callout {
+        margin-top: -5px;
+      }
+    }
+    @each $name,$color in (default,#777),(primary,#428bca),(success,#5cb85c),(danger,#d9534f),(warning,#f0ad4e),(info,#5bc0de), (bdc,#29527a) {
+      .callout-#{$name} {
+        border-left-color: $color;
+        h4 {
+          color: $color;
+        }
+      }
+    }
   </style>
 </head>
 
@@ -92,7 +121,9 @@
       <div style="z-index: 10001; opacity: 1!important;">
         <h1>
           Social Disorganization Theory
-          <div style="font-size: large; padding-top: 1em; padding-bottom: 1em;">A Brief(ish) Introduction​</div>
+          <div style="font-size: large; padding-top: 1em; padding-bottom: 1em;">
+            A Brief(ish) Introduction
+            ​</div>
           <hr />
           <img src="assests/jclogo.png" width="300" style="padding-top: 0.5em;" />
         </h1>
@@ -105,25 +136,39 @@
       <div class="row">
         <ul>
           <li>
-            <em>Social disorganization theory </em>(SDT) is a macro-level theory that explains
-            on the distribution of crime rates across
-            areas based on structural and cultural factors shaping the nature of social order, not on why any one individual may be more or less likely to engage in criminal acts than another
-            (Kubrin 2010).
+            <em>Social disorganization theory </em>(SDT) is a macro-level theory 
+            that explains on the distribution of crime rates across areas based 
+            on structural and cultural factors shaping the nature of social 
+            order, not on why any one individual may be more or less likely to 
+            engage in criminal acts than another (Kubrin 2010).
           </li>
           <li>
-            Social disorganization can be defined as the inability of a community to realize the common values of its
-            residents and maintain effective community-based <em>social controls</em> (Bursik 1988).
-            <!-- Social control is a concept referring to the rules and restrictions that shape, supervise, and regulate the behaviours of individuals and their societies. These can exists at informal (interpersonal relationships used to shame or praise) or formal (laws, rules, and regulations) forms of control. -->
+            Social disorganization can be defined as the inability of a 
+            community to realize the common values of its residents and maintain 
+            effective community-based <em>social controls</em> (Bursik 1988).
+            <!-- Social control is a concept referring to the rules and 
+              restrictions that shape, supervise, and regulate the behaviors of 
+              individuals and their societies. These can exists at informal 
+              (interpersonal relationships used to shame or praise) or formal 
+              (laws, rules, and regulations) forms of control. -->
           </li>
           <!-- 
-            Bursik notes that disorganization is more likely in areas of economic deprivation, which in the historical context that we will cover later on mean areas with high rates of population turnover and heterogeneity. He, and others, argues that these two processes increase disorganization because of:
-              1. The difficulty in forming institutions pertaining to internal controls as many residents are in flux
-              2. The weakness of the social networks required to form informal structures of social control when people are coming and going
-              3. Heterogeneity impedes communication and obstructs the quest to solve common problems
+            Bursik notes that disorganization is more likely in areas of 
+            economic deprivation, which in the historical context that we will 
+            cover later on mean areas with high rates of population turnover and 
+            heterogeneity. He, and others, argues that these two processes 
+            increase disorganization because of:
+              1. The difficulty in forming institutions pertaining to internal 
+                controls as many residents are in flux
+              2. The weakness of the social networks required to form informal 
+                structures of social control when people are coming and going
+              3. Heterogeneity impedes communication and obstructs the quest to 
+                solve common problems
            -->
           <li>
-            A key assumption is that communities can be classified on a continuum of disorganization, from high to
-            low. Here, highly disorganized communities experience more crime (Kubrin 2010).
+            A key assumption is that communities can be classified on a 
+            continuum of disorganization, from high to low. Here, highly 
+            disorganized communities experience more crime (Kubrin 2010).
           </li>
           <br />
           <div class="row">
@@ -147,7 +192,9 @@
             <div class="col-6">
               <div class="card">
                 <div class="card-body">
-                  <h3 class="card-title">Socially disorganized communities &#128543;</h3>
+                  <h3 class="card-title">
+                    Socially disorganized communities &#128543;
+                  </h3>
                   <p class="card-text">
                   <ul>
                     <li><s>Solidarity: residents want the same things</s></li>
@@ -173,16 +220,20 @@
       <h2>Shaw and McKay's Research (1942)</h2>
       <ul class="nav nav-pills nav-fill" id="myTab">
         <li class="nav-item">
-          <a href="#background" class="nav-link active" data-bs-toggle="tab"><i class="fa-solid fa-book"></i> Background</a>
+          <a href="#background" class="nav-link active" data-bs-toggle="tab">
+            <i class="fa-solid fa-book"></i> Background</a>
         </li>
         <li class="nav-item">
-          <a href="#maps" class="nav-link" data-bs-toggle="tab"><i class="fa-solid fa-map"></i> Maps</a>
+          <a href="#maps" class="nav-link" data-bs-toggle="tab">
+            <i class="fa-solid fa-map"></i> Maps</a>
         </li>
         <li class="nav-item">
-          <a href="#data" class="nav-link" data-bs-toggle="tab"><i class="fa-solid fa-database"></i> Data</a>
+          <a href="#data" class="nav-link" data-bs-toggle="tab">
+            <i class="fa-solid fa-database"></i> Data</a>
         </li>
         <li class="nav-item">
-          <a href="#findings" class="nav-link" data-bs-toggle="tab"><i class="fa-solid fa-magnifying-glass"></i> Findings</a>
+          <a href="#findings" class="nav-link" data-bs-toggle="tab">
+            <i class="fa-solid fa-magnifying-glass"></i> Findings</a>
         </li>
       </ul>
       <div class="tab-content">
@@ -190,36 +241,49 @@
           <br />
           <ul>
             <li>
-              Shaw and McKay applied the ideas of human ecology and the concentric zone model to study the association
-              between urban characteristics and juvenile delinquency.
+              Shaw and McKay applied the ideas of human ecology and the 
+              concentric zone model to study the association between urban 
+              characteristics and juvenile delinquency. On the basis of this
+              research they developed SDT.
             </li>
             <li>
-              Their study of social disorganization centered around three sets of variables:
+              By hand, they mapped the addresses of juvenile delinquents - those 
+              referred to juvenile court, truancy, and recidivism - and compiled 
+              them into small census areas and city zones. Then they examined 
+              delinquency in Chicago communities for three periods of time: 
+              1900-1906, 1917-1923, and 1927-1933.
+            </li>
+            <li>
+              Their study of social disorganization centered around three sets 
+              of variables:
               <ul>
                 <li>
-
-                  <p><span style="color: #1b9e77;">Physical status <i class="fa-solid fa-map-pin"></i>:</span> They proposed that areas with high
-                    delinquency rates
-                    tended to be physically deteriorated, close to heavy industry, and populated with highly transient
-                    residents.</p>
+                  <p>
+                    <span style="color: #1b9e77;">
+                      Physical status
+                      <i class="fa-solid fa-map-pin"></i>:
+                    </span> They proposed that areas with high delinquency rates
+                    tended to be physically deteriorated, close to heavy 
+                    industry, and populated with highly transient residents.
+                  </p>
                 </li>
                 <li>
-                  <p><span style="color: #d95f02;">Economic status <i class="fa-solid fa-money-bill"></i>:</span> The association
-                    between economic disadvantage and
-                    delinquency.</p>
+                  <p>
+                    <span style="color: #d95f02;">
+                      Economic status <i class="fa-solid fa-money-bill"></i>:
+                    </span> The association between economic disadvantage and 
+                    delinquency.
+                  </p>
                 </li>
                 <li>
-                  <p><span style="color: #7570b3;">Population status: <i class="fa-solid fa-user-group"></i></span> They relationship between
-                    demographics
-                    and the rate of delinquency in an area.</p>
+                  <p>
+                    <span style="color: #7570b3;">
+                      Population status: <i class="fa-solid fa-user-group"></i>
+                    </span> They relationship between demographics and the rate 
+                    of delinquency in an area.
+                  </p>
                 </li>
               </ul>
-            </li>
-            <li>
-              By hand, they mapped the addresses of juvenile delinquents - those referred to juvenile court, truancy,
-              and
-              recidivism - and compiled them into small census areas and city zones. Then they examined delinquency
-              in Chicago communities for three periods of time: 1900-1906, 1917-1923, and 1927-1933.
             </li>
           </ul>
         </div>
@@ -227,26 +291,40 @@
           <br />
           <div class="card" style="border: solid #1b9e77">
             <div class="card-body">
-              <h5 class="card-title">Physical status <i class="fa-solid fa-map-pin"></i></h5>
-              <p class="card-text">They measures the physical status of an area through: (1) population change, (2)
-                vacant and condemned housing, and (3) proximity to industry.</p>
+              <h5 class="card-title">
+                Physical status <i class="fa-solid fa-map-pin"></i>
+              </h5>
+              <p class="card-text">
+                They measures the physical status of an area through: (1) 
+                population change, (2) vacant and condemned housing, and (3) 
+                proximity to industry.
+              </p>
             </div>
           </div>
           <br />
           <div class="card" style="border: solid #d95f02">
             <div class="card-body">
-              <h5 class="card-title">Economic status <i class="fa-solid fa-money-bill"></i></h5>
-              <p class="card-text">They used three variables in their analysis: (1) the number of families receiving
-                social assistance, (2) the median rental price of the area, and (3) the number of homes ownen rather
-                than rented.</p>
+              <h5 class="card-title">
+                Economic status <i class="fa-solid fa-money-bill"></i>
+              </h5>
+              <p class="card-text">
+                They used three variables in their analysis: (1) the number of 
+                families receiving social assistance, (2) the median rental 
+                price of the area, and (3) the number of homes owned rather
+                than rented.
+              </p>
             </div>
           </div>
           <br />
           <div class="card" style="border: solid #7570b3">
             <div class="card-body">
-              <h5 class="card-title">Population status <i class="fa-solid fa-user-group"></i></h5>
-              <p class="card-text">They looked at the demographic variables such as ethnicity, number of foreign-born
-                heads of household, etc.</p>
+              <h5 class="card-title">
+                Population status <i class="fa-solid fa-user-group"></i>
+              </h5>
+              <p class="card-text">
+                They looked at the demographic variables such as ethnicity, 
+                number of foreign-born heads of household, etc.
+              </p>
             </div>
           </div>
           <p style="text-align:right;">
@@ -272,7 +350,9 @@
           <br />
           <div class="card" style="border: solid #1b9e77">
             <div class="card-body">
-              <h5 class="card-title">Physical status <i class="fa-solid fa-map-pin"></i></h5>
+              <h5 class="card-title">
+                Physical status <i class="fa-solid fa-map-pin"></i>
+              </h5>
               <p class="card-text">
                 Crime rates were pronounced in the transition zone and became 
                 progressively lower as one moves to the outer zones.
@@ -305,7 +385,9 @@
           <br />
           <div class="card" style="border: solid #d95f02">
             <div class="card-body">
-              <h5 class="card-title">Economic status <i class="fa-solid fa-money-bill"></i></h5>
+              <h5 class="card-title">
+                Economic status <i class="fa-solid fa-money-bill"></i>
+              </h5>
               <p class="card-text">
                 As the number of families receiving social assistance increased 
                 there was a rise in delinquency. Delinquency rates dropped as 
@@ -318,7 +400,9 @@
           <br />
           <div class="card" style="border: solid #7570b3">
             <div class="card-body">
-              <h5 class="card-title">Population status <i class="fa-solid fa-user-group"></i></h5>
+              <h5 class="card-title">
+                Population status <i class="fa-solid fa-user-group"></i>
+              </h5>
               <p class="card-text">
                 Rates of crime by area remained relatively the same regardless 
                 of ethnic turnover. This suggests that characteristics of the 
@@ -349,14 +433,20 @@
      -->
 
     <section class="slide">
-      <h2>Just how social disorganization cause delinquency? &#129300;</h2>
+      <h2>
+        Just how social disorganization cause delinquency? &#129300;
+      </h2>
       <br />
-      <p><i class="fa-solid fa-rotate-left"></i> Recall:  ...the inability of a community to realize the common values of its residents and maintain effective community-based social controls (Bursik 1988).</p>
+      <p>
+        <i class="fa-solid fa-rotate-left"></i> Recall:  ...the inability of a 
+        community to realize the common values of its residents and maintain 
+        effective community-based social controls (Bursik 1988).
+      </p>
       <br />
       <img src="assests/shaw_mckay.svg" />
-
-      <p style="text-align:right;font-size: smaller;">Borrowed from <a href="" https://clanfear.github.io />Charles C.
-        Lanfear</a></p>
+      <p style="text-align:right;font-size: smaller;"> 
+        Borrowed from <a href="https://clanfear.github.io"/>Charles C. Lanfear
+      </a></p>
       <!-- 
         Shaw and McKay did not supply a refined discussion on this concept. They
         suggested the characteristics of socially disorganized neighborhoods -
@@ -417,13 +507,21 @@
 
     <section class="slide">
       <h2>
-        Criticisms
+        From Boom to Lean Times
       </h2>
       <p>
         Despite a wave of replication of Shaw and McKay's work (Bordua, 1959; 
         Chilton, 1964; Lander, 1954), the theory lost its appeal &#128533; until 
-        the 1980s, resurging in the 1990s. </br></br>
-        Bursick (1988) provided five criticisms of the theory that served to layout the academic agenda in the next wave of studies:
+        the 1980s, resurging in the 1990s. 
+        </br></br>
+        In the 1980's, criminologist began reconsidered the theory because of 
+        an interest in the "ecology" of crime.
+        <!--Apparently much of the focus shifted to individual modes of crime-->
+        <!--An approach with analyzes ecological units such as neighborhoods, 
+          cities, states, or nations.-->
+        </br></br>
+        Bursick (1988) provided five criticisms of the theory that served to 
+        layout the academic agenda in the next wave of studies:
       </p>
       <ul>
         <li>The disciplinary shift in emphasis</li>
@@ -463,43 +561,77 @@
           Bursick argues that the normative assumptions 
         -->
       </ul>
-
-    </section>
-
-    <section class="slide">
-      <h2>Revitalizing Social Disorganization Theory</h2>
-      <p>An abridged version of events follows:
-      </p>
-      <ul>
-        <li>
-          In the 1980's, criminologist began reconsidered the theory because of 
-          an interest in the "ecology" of crime.
-        </li>
-        <!--Apparently much of the focus shifted to individual modes of crime-->
-        <!--An approach with analyzes ecological units such as neighborhoods, 
-          cities, states, or nations.-->
-        <li>
-          Sampson (1986) argued that crime was high in inner cities because of 
-          the limited capacity to exercise "informal social control" (Cullen et 
-          al. 2022). For example, coming from a neighborhood with a high number 
-          of broken homes, were adults are not around to supervise the youth.
-        </li>
-        <!--The argument here is that crime is higher because of "broken homes", 
-          where adults are not around to supervise youths and involve them in 
-          activities. Sampson argues that coming from a broken home is not in 
-          itself an issue, rather the problem was coming from a neighborhood 
-          with a high proportion of family headed by a single parent where 
-          control cannot be exercised effectively.-->
-        <li>Sampson and Groves (1989) extended Sampson's earlier research and 
-          tested Shaw and Mckay's idea that:</li>
-      </ul>
-      <img src="assests/sampson_grover_causal_model.svg" height="250" />
-      <p style="text-align:right; font-size: smaller;">Causal model from Sampson and Groves (1989)</p>
-
     </section>
 
     <section class="slide">
       <h2>Sampson and Groves (1989)</h2>
+      <ul class="nav nav-pills nav-fill" id="myTab">
+        <li class="nav-item">
+          <a href="#background-2" class="nav-link active" data-bs-toggle="tab">
+            <i class="fa-solid fa-book"></i> Background</a>
+        </li>
+        <li class="nav-item">
+          <a href="#model-2" class="nav-link" data-bs-toggle="tab">
+            <i class="fa-solid fa-diagram-project"></i> Model</a>
+        </li>
+        <li class="nav-item">
+          <a href="#data-2" class="nav-link" data-bs-toggle="tab">
+            <i class="fa-solid fa-database"></i> Data</a>
+        </li>
+        <li class="nav-item">
+          <a href="#findings-2" class="nav-link" data-bs-toggle="tab">
+            <i class="fa-solid fa-magnifying-glass"></i> Findings</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="background-2">
+          <ul>
+            <li>
+              Sampson (1986) argued that crime was high in inner cities because
+              residents had lost the capacity to exercise "informal social 
+              control" (Cullen et al. 2022). For example, coming from a 
+              neighborhood with a high number of "broken" homes, were adults 
+              are not around to supervise the youth.
+            </li>
+            <div class="callout callout-primary">
+              <h4>"Fun" Fact &#128161;</h4>
+              While a graduate student, Sampson enrolled in a seminar taught by
+              Travis Hirschi who was an advocate of <em>control theory.</em>
+            </div>
+            <!-- 
+              Sampson argues that coming from a broken home is not in 
+              itself an issue, rather the problem was coming from a neighborhood 
+              with a high proportion of family headed by a single parent where 
+              control cannot be exercised effectively.
+            -->
+            <li>
+              Sampson and Groves (1989) expanded on this work by testing the
+              idea that informal relations and controls would be weakened, 
+              leading to high crime, in communities marked by poverty,
+              heterogeneity, residential transiency, and family disruption. 
+            </li>
+            
+            <li>
+              Prior tests on SDT had only measured the structural "antecedents"
+              or cause of social disorganization and then examined if these
+              factors were related to crime. 
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="model-2">
+          </br>
+          <img src="assests/sampson_grover_causal_model.svg" height="400" />
+          <p style="text-align:right; font-size: smaller;">
+            Causal model from Sampson and Groves (1989)
+          </p>
+        </div>
+        <div class="tab-pane fade" id="data-2">
+          <p>test3</p>
+        </div>
+        <div class="tab-pane fade" id="findings-2">
+          <p>test</p>
+        </div>
+      </div>
     </section>
 
     <section class="slide">
@@ -508,33 +640,41 @@
 
     <section class="slide">
       <h2>
-        Extending Social Disorganization Theory <i class="fa-solid fa-code-branch"></i>
+        Extending Social Disorganization Theory
+        <i class="fa-solid fa-code-branch"></i>
       </h2>
       <div class="card-deck">
         <div class="card">
           <div class="card-body">
-            <h3 class="card-text">Collective Efficacy Theory</h3>
+            <h3 class="card-text">
+              Collective Efficacy Theory
+            </h3>
             <p class="card-text">
             <ul>
               <li>
                 A related alternative to the systemic model of SDT.
               </li>
               <li>
-                It includes the willingness of community residents to exercise social control and to trust and help one
-                another on behalf of the common good (Sampson et al. 1997). This concept appears to be the opposite of
-                social disorganization; yet, it differs because:
+                It includes the willingness of community residents to exercise 
+                social control and to trust and help one another on behalf of 
+                the common good (Sampson et al. 1997). This concept appears to 
+                be the opposite of social disorganization; yet, it differs 
+                because:
                 <ul>
                   <li>
-                    Organization isn't just control, but also mutual trust and support between neighbors.
+                    Organization isn't just control, but also mutual trust and 
+                    support between neighbors.
                   </li>
                   <li>
-                    Social disorganization is portrayed as a static factor that one is born into, collective efficacy is
-                    dynamic.
+                    Social disorganization is portrayed as a static factor that 
+                    one is born into, collective efficacy is dynamic.
                   </li>
                 </ul>
               </li>
               <li>
-                Collective efficacy is the "<em>process</em> of activating or converting social ties to achieve desired outcomes" (Sampson et al. 1999).
+                Collective efficacy is the "<em>process</em> of activating or 
+                converting social ties to achieve desired outcomes" (Sampson et 
+                al. 1999).
                 <!-- 
                   So communities high in collective efficacy can amass a 
                   unified front to make life for delinquents in their 
@@ -549,7 +689,9 @@
         </div>
         <div class="card">
           <div class="card-body">
-            <h3 class="card-text">Legal Cynicism and Community Crime</h3>
+            <h3 class="card-text">
+              Legal Cynicism and Community Crime
+            </h3>
             <p class="card-text">
               <!-- Introduced by Sampson and Bartusch in 1998 but expanded by 
                 Kirk and Papachristos in 2011.-->
@@ -616,11 +758,13 @@
       <h1>
         <p>Thank you &#128591!</p>
         <hr />
-        <div style="font-size: large; padding-top: 1em; padding-bottom: 1em;">For more information contact Chris
-          Callaghan at ccallaghan@csg.org.​</div>
-        <div style="font-size: large; padding-top: 1em; padding-bottom: 1em;">Made with <i
-            class="fa-solid fa-heart"></i> and hosted on <a class="fa-brands fa-github"
-            href="https://github.com/cllghn/sdt" style="color:black;"></a></div>
+        <div style="font-size: large; padding-top: 1em; padding-bottom: 1em;">
+          For more information contact Chris Callaghan at ccallaghan@csg.org.
+          ​</div>
+        <div style="font-size: large; padding-top: 1em; padding-bottom: 1em;">
+          Made with <i class="fa-solid fa-heart"></i> and hosted on 
+          <a class="fa-brands fa-github" href="https://github.com/cllghn/sdt" style="color:black;"></a>
+        </div>
         <img src="assests/jclogo.png" width="300" style="padding-top: 0.5em;" />
       </h1>
       <canvas class="confetti" id="canvas"></canvas>
@@ -630,41 +774,48 @@
       <h2>Works cited &#128214;</h2>
       <br />
       <p class="apa-reference">
-        Bursik, Robert. "Social Disorganization and Theories of Crime and Delinquency: Problems and Prospects."
-        <i>Criminology</i> vol. 26, 1988, pp. 519-551.
+        Bursik, Robert. "Social Disorganization and Theories of Crime and 
+        Delinquency: Problems and Prospects." <em>Criminology</em> vol. 26, 
+        1988, pp. 519-551.
       </p>
       <p class="apa-reference">
-        Cullen, Francis, et al. <i>Criminological Theory: Past to Present. </i> Oxford University Press, 2022.
+        Cullen, Francis, et al. <em>Criminological Theory: Past to Present.</em> 
+        Oxford University Press, 2022.
       </p>
       <p class="apa-reference">
-        Gehring, Krista, writer. <i>Crimcomics: Social Disorganization Theory.</i> Art by Michael Batista. Oxford:
-        Oxford University Press, 2018, Print.
+        Gehring, Krista, writer. <em>Crimcomics: Social Disorganization 
+        Theory.</em> Art by Michael Batista. Oxford: Oxford University Press, 
+        2018, Print.
       </p>
       <p class = "apa-reference">
-        Kirk, David and Andrew Papachristos. "Cultural Mechanisms and the Persistence of Neighborhood Violence." <i>American Journal of Sociology</i> vol. 116, 2011, pp. 1190-1233.
+        Kirk, David and Andrew Papachristos. "Cultural Mechanisms and the 
+        Persistence of Neighborhood Violence." <em>American Journal of 
+        Sociology</em> vol. 116, 2011, pp. 1190-1233.
       </p>
       <p class="apa-reference">
-        Kubrin, Charis. "Shaw, Clifford R., and Henry D. McKay: Social Disorganization Theory." <i>Encyclopedia of
-          Criminological Theory</i>, edited by Francis T. Cullen and Pamela Wilcox, SAGE Publications, 2010, pp.
-        828-835.
+        Kubrin, Charis. "Shaw, Clifford R., and Henry D. McKay: Social 
+        Disorganization Theory." <em>Encyclopedia of Criminological Theory</em>, 
+        edited by Francis T. Cullen and Pamela Wilcox, SAGE Publications, 2010, 
+        pp. 828-835.
       </p>
       <p class="apa-reference">
-        Sampston, Robert, et al. "Neighborhoods and Violence Crime: A Multilevel Study of Collective Efficacy."
-        <i>Science</i>, 1997, pp. 918-924.
+        Sampson, Robert, et al. "Neighborhoods and Violence Crime: A Multilevel
+        Study of Collective Efficacy." <em>Science</em>, 1997, pp. 918-924.
       </p>
       <p class="apa-reference">
-        Sampson, Robert and W. Byron Groves. "Community Structure and Crime: Testing Social-Disorganization Theory."
-        <i>American Sociological Review</i> vol. 64, 1999, pp. 663-660.
+        Sampson, Robert and W. Byron Groves. "Community Structure and Crime: 
+        Testing Social-Disorganization Theory." <em>American Sociological 
+        Review</em> vol. 64, 1999, pp. 663-660.
       </p>
       <p class="apa-reference">
-        Sampson, Robert et al. "Beyond Social Capital: Spatial Dynamics of Collective Efficacy for Children."
-        <i>The American Journal of Sociology</i> vol. 94, 1989, pp. 774-802.
+        Sampson, Robert et al. "Beyond Social Capital: Spatial Dynamics of 
+        Collective Efficacy for Children." <em>The American Journal of 
+        Sociology</em> vol. 94, 1989, pp. 774-802.
       </p>
       <p class="apa-reference">
-        Walker, Jeffery. "Social Disorganization Theory." <i>21st Century Criminology: A Reference Handbook.</i>,
-        edited
-        by J. Mitchell Miller. Sage Publications,
-        2009, pp. 312-322.
+        Walker, Jeffery. "Social Disorganization Theory." <em>21st Century 
+        Criminology: A Reference Handbook.</em>, edited by J. Mitchell Miller. 
+        Sage Publications, 2009, pp. 312-322.
       </p>
     </section>
 
