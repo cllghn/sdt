@@ -62,7 +62,8 @@
     }
 
     .slide-background {
-      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/United_States_Supreme_Court_Building%2C_July_21%2C_2020.jpg/800px-United_States_Supreme_Court_Building%2C_July_21%2C_2020.jpg");
+      /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/United_States_Supreme_Court_Building%2C_July_21%2C_2020.jpg/800px-United_States_Supreme_Court_Building%2C_July_21%2C_2020.jpg"); */
+      background-image: url("https://www.urban.org/sites/default/files/gettyimages-1134998552_crop.jpg");
       height: 100%;
       width: 100%;
       background-position: center;
@@ -89,27 +90,14 @@
       border: 1px solid #eee;
       border-left-width: 5px;
       border-radius: 3px;
-      h4 {
-        margin-top: 0;
-        margin-bottom: 5px;
-      }
-      p:last-child {
-        margin-bottom: 0;
-      }
-      code {
-        border-radius: 3px;
-      }
-      & + .bs-callout {
-        margin-top: -5px;
-      }
+      border-left-color: #4095b1;
+      font-size: smaller;
     }
-    @each $name,$color in (default,#777),(primary,#428bca),(success,#5cb85c),(danger,#d9534f),(warning,#f0ad4e),(info,#5bc0de), (bdc,#29527a) {
-      .callout-#{$name} {
-        border-left-color: $color;
-        h4 {
-          color: $color;
-        }
-      }
+    .callout-h4 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #4095b1 !important;
     }
   </style>
 </head>
@@ -593,28 +581,48 @@
               neighborhood with a high number of "broken" homes, were adults 
               are not around to supervise the youth.
             </li>
-            <div class="callout callout-primary">
-              <h4>"Fun" Fact &#128161;</h4>
-              While a graduate student, Sampson enrolled in a seminar taught by
-              Travis Hirschi who was an advocate of <em>control theory.</em>
-            </div>
             <!-- 
               Sampson argues that coming from a broken home is not in 
               itself an issue, rather the problem was coming from a neighborhood 
               with a high proportion of family headed by a single parent where 
               control cannot be exercised effectively.
             -->
-            <li>
-              Sampson and Groves (1989) expanded on this work by testing the
-              idea that informal relations and controls would be weakened, 
-              leading to high crime, in communities marked by poverty,
-              heterogeneity, residential transiency, and family disruption. 
-            </li>
-            
+            <div class="callout">
+              <h4 class="callout-h4">"Fun" Fact &#128161;</h4>
+              While a graduate student, Sampson enrolled in a seminar taught by
+              Travis Hirschi who was an advocate of <em>control theory.</em>
+            </div>
+            <!--
+              Sampson borrowed from Kornhauser's work on control and was taught
+              by Hirschi.
+            -->
             <li>
               Prior tests on SDT had only measured the structural "antecedents"
-              or cause of social disorganization and then examined if these
-              factors were related to crime. 
+              or causes of social disorganization and then examined if these
+              factors were related to crime. As they put it "the crux of the 
+              problem is that previous macro-level research in crime and 
+              delinquency has relied primarily on census data that rarely 
+              provide measures for the variables hypothesized to mediate the 
+              relationship between community structure and crime." (Sampson and 
+              Groves 1989, pp. 775). 
+            </li>
+            <!---
+              In large part, studies took for granted the social condition 
+              between the structural factors on the left side of the causal 
+              chain (poverty, transiency, heterogeneity) and the illegal conduct
+              on the right hand side (delinquency).
+            -->
+            <li>
+              Sampson and Groves (1989) expanded on prior work by testing the
+              idea that informal relations and controls would be weakened, 
+              leading to high crime, in communities marked by poverty,
+              heterogeneity, residential transiency, and family disruption. Or 
+              as they put it: "empirically, the structural dimension of 
+              community social disorganization can be measured in terms of 
+              prevalence and interdependence of social networks in a community 
+              ... and in the span of collective supervision that the community 
+              directs toward local problems." (Sampson and Groves 1989, pp. 
+              777).
             </li>
           </ul>
         </div>
@@ -622,20 +630,133 @@
           </br>
           <img src="assests/sampson_grover_causal_model.svg" height="400" />
           <p style="text-align:right; font-size: smaller;">
-            Causal model from Sampson and Groves (1989)
+            Causal model adapted from Sampson and Groves (1989)
           </p>
+          <!--
+            While previous focused primarily on the neighborhood characteristics
+            on crime, Sampson and Groves examine the importance of neighborhood 
+            organizational characteristics as intervening factors. 
+
+            To do so, they constructed three intervening dimension into their 
+            model:
+              - Ability of a community to supervise and control teenage peer 
+              groups, which was a key mechanism linking community 
+              characteristics with delinquency in Shaw and McKay's work.
+              - Network density, specifically, dense networks are desired as
+              they (1) increase the capacity of community residents to recognize 
+              each other and strangers, allowing people to watch out for each 
+              other, and (2) exert constraints on deviant behavior of residents 
+              in within the community. Sparse networks on the other hand are
+              problematic.
+              - Low organizational participation is problematic as they view 
+              participation in formal and voluntary organizations as an 
+              embodiment of local community solidarity.  
+          -->
         </div>
         <div class="tab-pane fade" id="data-2">
-          <p>test3</p>
+          <ul>
+            <li>The data came for this study came from the first 
+              <a href="https://www.crimesurvey.co.uk/en/index.html">
+                British Crime Survey (BCS)
+              </a>, a nationwide survey of England and Wales conducted in 1982.
+            </li>
+            <div class="callout">
+              <h4 class="callout-h4">"Fun" Fact &#128161;</h4>
+              The latest annual results were 
+              <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingseptember2022">
+              published</a> in October 2022.
+            </div>
+            <li>From their theoretical model they constructed variables for:
+              <ul>
+                <li>
+                  Local friendship networks: Using a question which asked 
+                  respondents how many of their friends resided in the local 
+                  community (~15-min walk).
+                </li>
+                <li>
+                  Organizational participation: Using a question which asked 
+                  about the social and leisure activities of respondents for 
+                  each night of the week. The variable focuses on percentage of 
+                  residents who participated in meetings of committees and clubs.
+                </li>
+                <li>
+                  Supervision of youth peer groups: They computed the percentage 
+                  of residents who reported disorderly teenage peer groups as
+                  "very common" in the neighborhood.
+                </li>
+                <li>
+                  Exogenous characteristics from Shaw and McKay model were 
+                  also derived from the survey. 
+                </li>
+                <li>
+                  As an indicator of crime, they constructed a total 
+                  victimization rate to reflect between community variations in 
+                  serious crimes against people.
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <div class="tab-pane fade" id="findings-2">
-          <p>test</p>
+        </br>
+          <ol>
+            <li>
+              Their empirical analysis established that communities 
+              characterized by sparse friendship networks, unsupervised teen 
+              groups, and low organization participation had disproportionally
+              high rates of crime and delinquency. 
+            </li>
+            <li>
+              The structural factors (poverty, heterogeneity, mobility) 
+              predicted their measures of social disorganization and, in turn, 
+              that weakly organized communities has higher crime rates.
+            </li>
+          </ol>
         </div>
       </div>
     </section>
 
     <section class="slide">
       <h2>Systemic Control Model of Social Disorganization</h2>
+      <ul>
+        <li>
+          Beginning with Sampson and Grove's work, tests of SDT began drawing 
+          from the <em>systemic model</em> of community attachment to measure 
+          <em>how</em> communities organize for effective control.
+        </li>
+        <div class="callout">
+          <h4 class="callout-h4">"Fun" Fact &#128161;</h4>
+          The systemic model of community attachment views the community as "a 
+          complex system of ... networks and formal and informal ... ties 
+          rooted in family life and on-going socialization processes" (Kasarda
+          and Janowitz 1972).
+        </div>
+        <li>
+          Sampson and Groves presumed that weak social control emerged from an
+          absence of ties among neighborhood residents.
+        </li>
+        <li>
+          Robert Bursik and Harold Grasmick (1993) extended this model beyond 
+          internal neighborhood ties as sources of organization and control. 
+          Their work includes a categories of ties that enhance social control 
+          on crime:
+          <ul>
+            <li>Private: intimate interpersonal ties (e.g., friendship).</li>
+            <li>Parochial: shared institutional and organizational ties (e.g., 
+              attending the same school).
+            </li>
+            <li>Public: connection to agencies outside the neighborhood with 
+              resources for controlling crime (e.e., local police).
+            </li>
+          </ul>
+          <li>
+            Velez's (2001) examined the value of public ties by studying 60 
+            neighborhoods and uncovering that residents' ties to government and 
+            police were associated with lower rates of burglary, assault, and 
+            mugging. 
+          </li>
+        </li>
+      </ul>
     </section>
 
     <section class="slide">
@@ -811,6 +932,11 @@
         Sampson, Robert et al. "Beyond Social Capital: Spatial Dynamics of 
         Collective Efficacy for Children." <em>The American Journal of 
         Sociology</em> vol. 94, 1989, pp. 774-802.
+      </p>
+      <p class="apa-reference">
+        Velez, Maria B. "The Role of Public Social Control in Urban 
+        Neighborhoods: A Multilevel Analysis of victimization Risk." 
+        <em>Criminology</em> vol. 39, 2001, pp. 837-864.
       </p>
       <p class="apa-reference">
         Walker, Jeffery. "Social Disorganization Theory." <em>21st Century 
